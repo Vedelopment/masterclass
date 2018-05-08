@@ -38,7 +38,7 @@ user_data =
 User.create(user_data)
 
 instructor_data =
-    [{"first_name":"Lannie","last_name":"Cogin","course": Course.first},
+    [{"first_name":"Chris","last_name":"Hadfield","course": Course.first},
     {"first_name":"Melina","last_name":"Odom","course": Course.second},
     {"first_name":"Dana","last_name":"Minmagh","course": Course.third},
     {"first_name":"Gaston","last_name":"Heavens"},
