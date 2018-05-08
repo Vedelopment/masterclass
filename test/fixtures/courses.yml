@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  has_may: MyString
+  : 
+  has_many: MyString
+  : 
+  has_many: MyString
+  : 
+  through: MyString
+  : 
+  title: MyString
+  avail: false
+  avail_date: 2018-05-07 13:45:35
+  lg_thumb: MyString
+  sm_thumb: MyString
+  workbook: MyString
+  cm_intro_title: MyString
+  cm_intro_desc: MyText
+  cm_less_logo: MyString
+  cm_less_title: MyString
+  cm_less_desc: MyString
+  cm_excl_logo: MyString
+  cm_excl_title: MyString
+  cm_excl_desc: MyString
+  cm_info_img: MyString
+
+two:
+  has_may: MyString
+  : 
+  has_many: MyString
+  : 
+  has_many: MyString
+  : 
+  through: MyString
+  : 
+  title: MyString
+  avail: false
+  avail_date: 2018-05-07 13:45:35
+  lg_thumb: MyString
+  sm_thumb: MyString
+  workbook: MyString
+  cm_intro_title: MyString
+  cm_intro_desc: MyText
+  cm_less_logo: MyString
+  cm_less_title: MyString
+  cm_less_desc: MyString
+  cm_excl_logo: MyString
+  cm_excl_title: MyString
+  cm_excl_desc: MyString
+  cm_info_img: MyString

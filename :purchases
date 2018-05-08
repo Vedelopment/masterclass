@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20180507212804_update_instructor_relationship_to_course.rb
