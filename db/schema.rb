@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180508030724) do
+ActiveRecord::Schema.define(version: 20180509062148) do
 
   create_table "chapters", force: :cascade do |t|
     t.integer  "number"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20180508030724) do
 
   create_table "courses", force: :cascade do |t|
     t.string   "title"
-    t.boolean  "avail"
+    t.integer  "avail",          default: 0
     t.datetime "avail_date"
     t.string   "lg_thumb"
     t.string   "sm_thumb"
@@ -40,8 +40,8 @@ ActiveRecord::Schema.define(version: 20180508030724) do
     t.string   "cm_excl_title"
     t.string   "cm_excl_desc"
     t.string   "cm_info_img"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
   create_table "instructors", force: :cascade do |t|
