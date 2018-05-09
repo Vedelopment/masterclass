@@ -7,7 +7,7 @@
             </a>
         </span>
         <a class="mc-header__wordmark" href="#">
-            <img src="https://do6eyjibs3jse.cloudfront.net/assets/refresh/global/logo-wordmark-d877f23f3d8d268d21363154e97d193e4ba5690dd3fa376a38c2ad243c469fe9.svg" alt="Logo wordmark">
+            <img class="mc-header-logo-full" src="https://do6eyjibs3jse.cloudfront.net/assets/refresh/global/logo-wordmark-d877f23f3d8d268d21363154e97d193e4ba5690dd3fa376a38c2ad243c469fe9.svg" alt="Logo wordmark">
         </a>
         <!-- <a id="logo-primary" href="/">
             <img class="mc-header__logo" src="https://do6eyjibs3jse.cloudfront.net/assets/refresh/global/logo-f4f6da1f914f01c62d6d9298b29c4b965d69109fc7668c60a7b6652505d9bacd.png">
@@ -20,21 +20,21 @@
         <div class="vignette"></div>
         <img class="course-hero" src="https://d3e9iqx18mbphw.cloudfront.net/images/1589/original/1523378551-Class_Hero.jpg" alt="">
         <img class="play-button" src="https://do6eyjibs3jse.cloudfront.net/assets/icons/icn-play-button-7ba012291cbf0c5ef41a6809bf798ce99aed9a8f76de812b219817cbba41e472.svg" alt="">
-        <h2 class="course-inst"><%= "#{@course.instructor.first_name} #{@course.instructor.last_name}" %></h4>
-        <h1 class="course-title">teaches <%= @course.title %></h4>
+        <h1 class="course-inst"><%= "#{@course.instructor.first_name} #{@course.instructor.last_name}" %></h1>
+        <h2 class="course-title">teaches <%= @course.title %></h2>
     </div>
 
     <!-- enroll info -->
     <div class="wrap-course-enroll">
         <div class="dev-col-three">
             <img class="column-icon loading" height="40" width="100" alt="icon" src="https://d3e9iqx18mbphw.cloudfront.net/images/1609/original/1524172854-CH_Orbit.svg?1524172854" data-was-processed="true">
-            <h1 class="cm-intro-title"><%= @course.cm_intro_title %></h4>
-            <h1 class="cm-intro-desc"><%= @course.cm_intro_desc %></h4>
+            <p class="cm-intro-title"><%= @course.cm_intro_title %></p>
+            <p class="cm-intro-desc"><%= @course.cm_intro_desc %></p>
         </div>
         <div class="dev-col-three">
             <img class="column-icon loading" height="40" width="100" alt="icon" src="https://d3e9iqx18mbphw.cloudfront.net/images/1610/original/1524172854-CH_Spacewalk.svg?1524172854" data-was-processed="true">
-            <h1 class="cm-intro-title"><%= @course.cm_excl_title %></h4>
-            <h1 class="cm-intro-desc"><%= @course.cm_excl_desc %></h4>
+            <p class="cm-intro-title"><%= @course.cm_excl_title %></p>
+            <p class="cm-intro-desc"><%= @course.cm_excl_desc %></p>
         </div>
         <div class="dev-col-three">
             <div class="cm-ctas-block">
@@ -56,8 +56,28 @@
 
     <!-- course description -->
     <div class="wrap-cm-less">
-        <h1 class="cm-less-title"><%= @course.cm_less_title %></h4>
-        <h1 class="cm-less-desc"><%= @course.cm_less_desc %></h4>
+        <h3 class="cm-less-title"><%= @course.cm_less_title %></h3>
+        <p class="cm-less-desc"><%= @course.cm_less_desc %></p>
     </div>
     <img class="cm-less-img" src="https://res.cloudinary.com/static-masterclass/image/fetch/dpr_auto,f_auto,q_auto:best/https://d3e9iqx18mbphw.cloudfront.net/images/1586/original/1523378551-Class_Portrait.jpg%3F1523378551" alt="">
+
+    <!-- chapters -->
+    <div class="wrap-cm-less-list">
+        <% @course.chapters.each do |c| %>
+            <div class="indv-less">
+                <div class="wrap-cm-chapt-number">
+                    <p class="cm-chapt-number">
+                        <% if c.number < 10 %>
+                        <span>0</span>
+                        <% end %>
+                        <%= c.number %>
+                    </p>
+                </div>
+                <div class="wrap-cm-chapt-info">
+                    <p class="cm-chapt-title"><%= c.title %></p>
+                    <p class="cm-chapt-desc"><%= c.desc %></p>
+                </div>
+            </div>
+        <% end %>
+    </div>
 </div>

@@ -24,6 +24,7 @@ body {
 }
 /* nav */
 .mc-header__inner {
+    max-width: 1200px;
     position: relative;
     text-transform: uppercase;
     z-index: 20;
@@ -35,6 +36,7 @@ span.see-more-arrow {
     color: #c83232;
     margin-right: 2px;
     font-size: 10px;
+    margin-left: 10px;
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
@@ -53,18 +55,20 @@ a:link, a:visited, a:hover, a:active {
     width: 124px;
     height: 56px;
 }
+.mc-header-logo-full {
+    width: 125px;
+}
 .mc-header__wordmark {
     display: inline-block;
     position: absolute;
-    top: 12px;
-    left: calc(50% - 72px);
+    top: 10px;
+    left: calc(50% - 62px);
     right: 50%;
-    width: 100px;
     margin: auto;
 }
 .mc-header__login-link {
-    position: absolute;
-    right: 18px;
+    float: right;
+    margin-right: 10px;
 }
 /* course hero area */
 .vignette {
@@ -98,6 +102,7 @@ a:link, a:visited, a:hover, a:active {
 .course-title {
     position: absolute;
     width: 100%;
+    max-width: 1200px;
     top: 442px;
     text-align: center;
     font-size: 34px;
@@ -110,6 +115,7 @@ a:link, a:visited, a:hover, a:active {
 .course-inst {
     position: absolute;
     width: 100%;
+    max-width: 1200px;
     top: 370px;
     text-align: center;
     font-size: 50px;
@@ -171,6 +177,56 @@ a:link, a:visited, a:hover, a:active {
     position: absolute;
     margin-right: -100px; /* takes into account clip value */
     clip: rect(0px,460px,526px,0px);
+}
+.wrap-cm-less-list {
+    background: #fff;
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0 1.25em;
+}
+/* chapters */
+.wrap-cm-chapt-number {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+}
+.wrap-cm-chapt-info {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+}
+.indv-less {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(77,87,104,0.2);
+}
+.cm-chapt-number {
+    font-size: 3em;
+    color: rgba(77,87,104,0.4);
+}
+.cm-chapt-title {
+    font-size: 1.5em;
+    color: #4d5768;
+    margin-bottom: 8px;
+}
+.cm-chapt-desc {
+    color: rgba(77,87,104,0.6);
+    line-height: 1.2;
+    margin: 0;
 }
 
 /* get started */

@@ -62,14 +62,14 @@ instructor_data =
 Instructor.create(instructor_data)
 
 chapter_data =
-    [{"number":1,"title":"Dromedary camel","course": Course.first},
-    {"number":2,"title":"Gray langur","course": Course.first},
-    {"number":3,"title":"Uinta ground squirrel","course": Course.first},
-    {"number":4,"title":"Owl, madagascar hawk","course": Course.first},
-    {"number":5,"title":"Capuchin, white-fronted","course": Course.first},
-    {"number":6,"title":"Red-billed toucan","course": Course.first},
-    {"number":7,"title":"Squirrel, pine","course": Course.first},
-    {"number":8,"title":"Denham's bustard","course": Course.first},
-    {"number":9,"title":"Sacred ibis","course": Course.first},
-    {"number":10,"title":"Helmeted guinea fowl","course": Course.first}]
+    [{"number":1,"title":"Dromedary camel","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 1,"course": Course.first},
+    {"number":2,"title":"Gray langur","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 2,"course": Course.first},
+    {"number":3,"title":"Uinta ground squirrel","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 3,"course": Course.first},
+    {"number":4,"title":"Owl, madagascar hawk","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 4,"course": Course.first},
+    {"number":5,"title":"Capuchin, white-fronted","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 5,"course": Course.first},
+    {"number":6,"title":"Red-billed toucan","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 6,"course": Course.first},
+    {"number":7,"title":"Squirrel, pine","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 7,"course": Course.first},
+    {"number":8,"title":"Denham's bustard","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 8,"course": Course.first},
+    {"number":9,"title":"Sacred ibis","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 9,"course": Course.first},
+    {"number":10,"title":"Helmeted guinea fowl","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 10,"course": Course.first}]
 Chapter.create(chapter_data)
