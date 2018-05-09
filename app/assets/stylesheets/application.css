@@ -26,16 +26,26 @@ body {
     margin: 0 auto;
 }
 /* nav */
-.mc-header__inner {
+.mc-header__outer {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 20;
-    padding: 11px calc(10% - 610px);
+    z-index: 22;
+    line-height: 1;
+}
+.mc-header__inner {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 22;
+    margin: 0 auto;
+    padding: 11px 0;
     background-color: black;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.1em;
+    transform: translate3d(0, 0, 0);
 }
 span.see-more-arrow {
     color: #c83232;
@@ -64,7 +74,7 @@ a:link, a:visited, a:hover, a:active {
 }
 .mc-header__login-link {
     float: right;
-    margin-right: 10px;
+    margin-right: -4px;
 }
 .mc-header__login-link {
     position: absolute;
