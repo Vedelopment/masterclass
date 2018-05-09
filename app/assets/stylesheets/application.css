@@ -13,3 +13,73 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background-color: black;
+    font-family: arial, sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+/* nav */
+.mc-header__inner {
+    position: relative;
+    text-transform: uppercase;
+    z-index: 20;
+    font-size: 13px;
+    padding: 8px;
+    letter-spacing: 0.1em;
+}
+span.see-more-arrow {
+    color: #c83232;
+    margin: 10px;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+.mc-header__inner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+.mc-header__logo {
+    width: 124px;
+    height: 56px;
+}
+.mc-header__wordmark {
+    width: 100%;
+}
+.mc-header__login-link {
+    position: absolute;
+    right: 46px;
+}
+/* course hero */
+.vignette {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 960px;
+    height: 536px;
+    margin-left: -480px;
+    background: radial-gradient(circle, transparent 50%, black 100%);
+    box-shadow: 0 0 100px 80px black inset;
+    z-index: 1;
+}
+.course-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 960px;
+    margin: auto;
+}
+.play-button {
+    position: absolute;
+    top: 340px;
+    left: 0;
+    right: 0;
+    width: 70px;
+    margin: auto
+}
