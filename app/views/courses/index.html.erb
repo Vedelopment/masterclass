@@ -84,9 +84,7 @@
                     <div class="wrap-cm-chapt-number">
                         <p class="cm-chapt-number">
                             <% if c.number < 10 %>
-                            <span>0</span>
-                            <% end %>
-                            <%= c.number %>
+                            <span>0</span><% end %><span><%= c.number %></span> <!-- must be on same line to remove white space -->
                         </p>
                     </div>
                     <div class="wrap-cm-chapt-info">

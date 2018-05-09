@@ -218,7 +218,7 @@ a:link, a:visited, a:hover, a:active {
     display: flex;
     flex-direction: column;
     width: 90%;
-    padding: 20px;
+    padding: 2.25em 1em;
 }
 .indv-less {
     display: -webkit-box;
@@ -239,7 +239,7 @@ a:link, a:visited, a:hover, a:active {
 .cm-chapt-title {
     font-size: 1.5em;
     color: #4d5768;
-    margin-bottom: 8px;
+    margin: 8px 0;
 }
 .cm-chapt-desc {
     color: rgba(77,87,104,0.6);
