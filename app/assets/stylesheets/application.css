@@ -113,7 +113,7 @@ a:link, a:visited, a:hover, a:active {
     position: absolute;
     width: 100%;
     max-width: 1200px;
-    top: 442px;
+    top: 436px;
     text-align: center;
     font-size: 34px;
     font-weight: lighter;
@@ -136,7 +136,7 @@ a:link, a:visited, a:hover, a:active {
 }
 /* enroll area */
 .wrap-course-enroll {
-    margin-top: 560px;
+    margin-top: 500px;
 }
 .dev-col-three {
     display: inline-block;
