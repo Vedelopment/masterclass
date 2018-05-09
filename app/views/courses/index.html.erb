@@ -14,9 +14,9 @@
         </a> -->
         <a class="mc-header__login-link" href="#"> Log In</a>
     </div>
-  <h4><%= @course.title %></h4>
-  <h4><%= @course.instructor.first_name %></h4>
   <div class="vignette"></div>
   <img class="course-hero" src="https://d3e9iqx18mbphw.cloudfront.net/images/1589/original/1523378551-Class_Hero.jpg" alt="">
   <img class="play-button" src="https://do6eyjibs3jse.cloudfront.net/assets/icons/icn-play-button-7ba012291cbf0c5ef41a6809bf798ce99aed9a8f76de812b219817cbba41e472.svg" alt="">
+  <h2 class="course-inst"><%= "#{@course.instructor.first_name} #{@course.instructor.last_name}" %></h4>
+  <h1 class="course-title">teaches <%= @course.title %></h4>
 </div>
