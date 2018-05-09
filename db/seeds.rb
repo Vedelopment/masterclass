@@ -34,6 +34,19 @@ course_data =
     {"title":"Elymus interruptus Buckley","sm_thumb":"","lg_thumb":""},
     {"title":"Baileya pleniradiata Harv. & A. Gray ex A. Gray","sm_thumb":"","lg_thumb":""}]
 Course.create(course_data)
+first = Course.first
+second = Course.second
+
+[first, second].each do |recommender|
+	Course.all.each do |recommendee|
+		unless recommendee == recommender
+			Recommendation.create ({
+					recommender_id: recommender.id,
+					recommendee_id: recommendee.id
+				})
+		end
+	end
+end
 
 user_data =
     [{"first_name":"Cassie","last_name":"Stranger","email":"cstranger0@msn.com","phone":"911-380-6986","all_access":false},
