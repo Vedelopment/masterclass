@@ -19,7 +19,10 @@ course_data =
             "lg_thumb":"",
             "cm_intro_title":"28+ Lessons",
             "cm_intro_desc":"In 28+ lessons, the former commander of the International Space Station teaches you the science of space exploration and what the future holds for it.",
-
+            "cm_excl_title":"100% Exclusive",
+            "cm_excl_desc":"Enroll today and get access to video lessons and exclusive class materials. Learn at your own pace on mobile or desktop.",
+            "cm_less_title":"Explore the unknown",
+            "cm_less_desc":"Impossible things happen. At age nine, Chris Hadfield knew he wanted to go to space. He eventually went there three times, becoming a commander of the International Space Station. In his MasterClass, Chris teaches you what it takes to explore space and what the future holds for humans in the final frontier. Learn about the science of space travel, life as an astronaut, and how flying in space will forever change the way you think about living on Earth.",
         },
     {"title":"Ceanothus parvifolius (S. Watson) Trel.","sm_thumb":"","lg_thumb":""},
     {"title":"Rosa yainacensis Greene","sm_thumb":"","lg_thumb":""},

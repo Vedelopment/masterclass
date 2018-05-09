@@ -16,9 +16,10 @@
 
 body {
     background-color: black;
-    font-family: Lato, Helvetica, Arial, sans-serif;
+    font: normal 400 16px/1 "Lato", "Helvetica", "Arial", sans-serif;
     font-weight: lighter;
     color: white;
+    font-sm
 }
 /* nav */
 .mc-header__inner {
@@ -43,23 +44,26 @@ a:link, a:visited, a:hover, a:active {
     top: 0;
     width: 100%;
     background-color: black;
+    font-size: 12px;
+    padding: 11px 0;
+    letter-spacing: 0.1em;
 }
 .mc-header__logo {
     width: 124px;
     height: 56px;
 }
 .mc-header__wordmark {
-    display: block;
+    display: inline-block;
     position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
+    top: 12px;
+    left: calc(50% - 72px);
+    right: 50%;
     width: 100px;
     margin: auto;
 }
 .mc-header__login-link {
     position: absolute;
-    right: 46px;
+    right: 18px;
 }
 /* course hero area */
 .vignette {
@@ -115,6 +119,120 @@ a:link, a:visited, a:hover, a:active {
 }
 /* enroll area */
 .wrap-course-enroll {
+    margin-top: 560px;
+}
+.dev-col-three {
+    display: inline-block;
+    width: 29%;
+    padding: 20px;
+    text-align: center;
+}
+.dev-col-three:nth-child(2) {
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+}
+.cm-intro-title {
+    font-size: 20px;
+    line-height: 1.04;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0.8em auto 0.5em;
+}
+.cm-intro-desc {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.375;
+    color: rgba(255,255,255,0.5);
+}
+
+
+/* get started */
+/* imported from chrome inspector */
+.cm-ctas-block {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.cm-ctas-block__title {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+.mc-button {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 223px;
+    margin: 0;
+    padding: 16px;
+    background-color: #c83232;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    border: 1px solid transparent;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: background .3s ease,border .3s ease;
+    -o-transition: background .3s ease,border .3s ease;
+    -moz-transition: background .3s ease,border .3s ease;
+    transition: background .3s ease,border .3s ease;
+    cursor: pointer;
+}
+.cm-ctas-block__non-aap-buttons .mc-button {
+    min-width: 0;
+    width: 100%;
+}
+.cm-ctas-block__primary-button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+}
+.mc-button--secondary {
+    background-color: #333;
+}
+.cm-ctas-block__non-aap-buttons {
+    display: flex;
+}
+.cm-ctas-block__separator {
     position: relative;
-    top: 560px;
+    line-height: 16px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 9px 0;
+    color: rgba(255,255,255,0.5);
+}
+.mc-button--outline {
+    position: relative !important;
+    right: -32px;
+    background-color: transparent;
+    border-color: rgba(255,255,255,0.2);
+    width: 100px !important;
+}
+.cm-ctas-block__pricing-description {
+    line-height: 22px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: rgba(255,255,255,0.5);
+}
+.cm-ctas-block__non-aap-button--single {
+    margin-right: 12px;
+    width: 180px;
+}
+
+.cm-ctas-block__non-aap-button {
+    flex-grow: 1;
+}
+.cm-ctas-block__non-aap-buttons {
+    display: flex;
+}
+.cm-ctas-block__single-class-description {
+    line-height: 22px;
+    font-size: 14px;
+    margin-top: 4px;
+    letter-spacing: 0.2px;
+    color: rgba(255,255,255,0.5);
 }

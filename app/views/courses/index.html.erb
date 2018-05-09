@@ -2,11 +2,11 @@
     <div class="mc-header__inner">
         <span class="mc-nav-action mc-breadcrumb">
             <span class="see-more-arrow"><</span>
-            <a href="">
+            <a href="#">
                 See More Instructors
             </a>
         </span>
-        <a class="mc-header__wordmark" href="/">
+        <a class="mc-header__wordmark" href="#">
             <img src="https://do6eyjibs3jse.cloudfront.net/assets/refresh/global/logo-wordmark-d877f23f3d8d268d21363154e97d193e4ba5690dd3fa376a38c2ad243c469fe9.svg" alt="Logo wordmark">
         </a>
         <!-- <a id="logo-primary" href="/">
@@ -26,7 +26,31 @@
 
     <!-- enroll info -->
     <div class="wrap-course-enroll">
-        <h1 class="cm-intro-title"><%= @course.cm_intro_title %></h4>
-        <h1 class="cm-intro-title"><%= @course.cm_intro_desc %></h4>
+        <div class="dev-col-three">
+            <img class="column-icon loading" height="40" width="100" alt="icon" src="https://d3e9iqx18mbphw.cloudfront.net/images/1609/original/1524172854-CH_Orbit.svg?1524172854" data-was-processed="true">
+            <h1 class="cm-intro-title"><%= @course.cm_intro_title %></h4>
+            <h1 class="cm-intro-desc"><%= @course.cm_intro_desc %></h4>
+        </div>
+        <div class="dev-col-three">
+            <img class="column-icon loading" height="40" width="100" alt="icon" src="https://d3e9iqx18mbphw.cloudfront.net/images/1610/original/1524172854-CH_Spacewalk.svg?1524172854" data-was-processed="true">
+            <h1 class="cm-intro-title"><%= @course.cm_excl_title %></h4>
+            <h1 class="cm-intro-desc"><%= @course.cm_excl_desc %></h4>
+        </div>
+        <div class="dev-col-three">
+            <div class="cm-ctas-block">
+                <h5 class="cm-ctas-block__title">Get started now</h5>
+                <a class="mc-button cm-ctas-block__primary-button" href="#cart?product_id=62">All-Access Pass</a>
+                <div class="cm-ctas-block__pricing-description">$180 / year - Access to all our classes<a class="subscription-modal-type__more-info-icon" data-purchase-click="false" data-location="hero" data-action="faq" data-video="" href="#take_class?product_id=81"> </a></div>
+                    <div class="cm-ctas-block__separator"><span>OR</span></div>
+                    <div class="cm-ctas-block__non-aap-buttons">
+                        <div class="cm-ctas-block__non-aap-button cm-ctas-block__non-aap-button--single"><a class="mc-button mc-button--secondary" data-mc-segment-trigger="true" data-mc-segment-event-type="Purchase Click" data-event-obj="{&quot;location&quot;:&quot;hero&quot;,&quot;action&quot;:&quot;primary&quot;,&quot;type&quot;:&quot;single-class&quot;,&quot;class&quot;:&quot;chris-hadfield-teaches-space-exploration&quot;,&quot;video&quot;:&quot;&quot;}" href="#cart?product_id=81">Single Class</a>
+                        <p class="cm-ctas-block__single-class-description">$90</p>
+                        </div>
+                    <div class="cm-ctas-block__non-aap-button cm-ctas-block__non-aap-button--gift">
+                        <a class="mc-button mc-button--outline" data-mc-segment-trigger="true" data-mc-segment-event-type="Purchase Click" data-event-obj="{&quot;location&quot;:&quot;hero&quot;,&quot;action&quot;:&quot;gift&quot;,&quot;class&quot;:&quot;chris-hadfield-teaches-space-exploration&quot;,&quot;video&quot;:&quot;&quot;}" href="#gift_options?product_id=81">Gift</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
