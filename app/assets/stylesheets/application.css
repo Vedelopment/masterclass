@@ -233,6 +233,8 @@ a:link, a:visited, a:hover, a:active {
     border-bottom: none;
 }
 .cm-chapt-number {
+    position: relative;
+    top: -.1em;
     font-size: 3em;
     color: rgba(77,87,104,0.4);
 }
