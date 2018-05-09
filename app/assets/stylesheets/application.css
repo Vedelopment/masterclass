@@ -65,7 +65,7 @@ a:link, a:visited, a:hover, a:active {
 .vignette {
     display: block;
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 50%;
     width: 960px;
     height: 536px;
@@ -76,7 +76,7 @@ a:link, a:visited, a:hover, a:active {
 }
 .course-hero {
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 0;
     right: 0;
     width: 960px;
@@ -84,7 +84,7 @@ a:link, a:visited, a:hover, a:active {
 }
 .play-button {
     position: absolute;
-    top: 340px;
+    top: 320px;
     left: 0;
     right: 0;
     width: 70px;
@@ -93,7 +93,7 @@ a:link, a:visited, a:hover, a:active {
 .course-title {
     position: absolute;
     width: 100%;
-    top: 462px;
+    top: 442px;
     text-align: center;
     font-size: 34px;
     font-weight: lighter;
@@ -105,7 +105,7 @@ a:link, a:visited, a:hover, a:active {
 .course-inst {
     position: absolute;
     width: 100%;
-    top: 390px;
+    top: 370px;
     text-align: center;
     font-size: 50px;
     font-weight: bold;
