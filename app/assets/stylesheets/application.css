@@ -25,13 +25,14 @@ body {
     position: relative;
     text-transform: uppercase;
     z-index: 20;
-    font-size: 11px;
-    padding: 8px;
+    font-size: 12px;
+    padding: 10px 0;
     letter-spacing: 0.1em;
 }
 span.see-more-arrow {
     color: #c83232;
-    margin: 10px;
+    margin-right: 2px;
+    font-size: 10px;
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
