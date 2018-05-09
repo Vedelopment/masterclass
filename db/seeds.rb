@@ -12,7 +12,12 @@ Chapter.destroy_all
 User.destroy_all
 
 course_data =
-    [{"title":"Cotoneaster ×watereri Exell","sm_thumb":"","lg_thumb":""},
+    [
+        {
+            "title":"Cotoneaster ×watereri Exell",
+            "sm_thumb":"sm",
+            "lg_thumb":"lg"
+        },
     {"title":"Ceanothus parvifolius (S. Watson) Trel.","sm_thumb":"","lg_thumb":""},
     {"title":"Rosa yainacensis Greene","sm_thumb":"","lg_thumb":""},
     {"title":"Acacia omalophylla A. Cunn. ex Benth.","sm_thumb":"","lg_thumb":""},
