@@ -113,3 +113,8 @@ a:link, a:visited, a:hover, a:active {
     z-index: 1;
     letter-spacing: 2.2px;
 }
+/* enroll area */
+.wrap-course-enroll {
+    position: relative;
+    top: 560px;
+}

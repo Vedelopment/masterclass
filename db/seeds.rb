@@ -12,7 +12,15 @@ Chapter.destroy_all
 User.destroy_all
 
 course_data =
-    [{"title":"Space Exploration","sm_thumb":"","lg_thumb":""},
+    [
+        {
+            "title":"Space Exploration",
+            "sm_thumb":"",
+            "lg_thumb":"",
+            "cm_intro_title":"28+ Lessons",
+            "cm_intro_desc":"In 28+ lessons, the former commander of the International Space Station teaches you the science of space exploration and what the future holds for it.",
+
+        },
     {"title":"Ceanothus parvifolius (S. Watson) Trel.","sm_thumb":"","lg_thumb":""},
     {"title":"Rosa yainacensis Greene","sm_thumb":"","lg_thumb":""},
     {"title":"Acacia omalophylla A. Cunn. ex Benth.","sm_thumb":"","lg_thumb":""},
