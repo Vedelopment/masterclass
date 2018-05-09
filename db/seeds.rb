@@ -24,15 +24,15 @@ course_data =
             "cm_less_title":"Explore the unknown",
             "cm_less_desc":"Impossible things happen. At age nine, Chris Hadfield knew he wanted to go to space. He eventually went there three times, becoming a commander of the International Space Station. In his MasterClass, Chris teaches you what it takes to explore space and what the future holds for humans in the final frontier. Learn about the science of space travel, life as an astronaut, and how flying in space will forever change the way you think about living on Earth.",
         },
-    {"title":"Ceanothus parvifolius (S. Watson) Trel.","sm_thumb":"","lg_thumb":""},
-    {"title":"Rosa yainacensis Greene","sm_thumb":"","lg_thumb":""},
-    {"title":"Acacia omalophylla A. Cunn. ex Benth.","sm_thumb":"","lg_thumb":""},
-    {"title":"Diapensia L.","sm_thumb":"","lg_thumb":""},
-    {"title":"Sedum kamtschaticum Fisch. & C.A. Mey.","sm_thumb":"","lg_thumb":""},
-    {"title":"Cleome rutidosperma DC.","sm_thumb":"","lg_thumb":""},
-    {"title":"Echinocereus viridiflorus Engelm. var. russanthus (D. Weniger) A.D. Zimmerman","sm_thumb":"","lg_thumb":""},
-    {"title":"Elymus interruptus Buckley","sm_thumb":"","lg_thumb":""},
-    {"title":"Baileya pleniradiata Harv. & A. Gray ex A. Gray","sm_thumb":"","lg_thumb":""}]
+        {"title":"Research Associate","sm_thumb":"http://dummyimage.com/505x308.jpg/dddddd/000000","lg_thumb":"http://dummyimage.com/505x308.jpg/ff4444/ffffff"},
+        {"title":"Financial Analyst","sm_thumb":"http://dummyimage.com/505x308.jpg/dddddd/000000","lg_thumb":"http://dummyimage.com/505x308.jpg/dddddd/000000"},
+        {"title":"Database Administrator II","sm_thumb":"http://dummyimage.com/505x308.jpg/5fa2dd/ffffff","lg_thumb":"http://dummyimage.com/505x308.jpg/cc0000/ffffff"},
+        {"title":"Senior Quality Engineer","sm_thumb":"http://dummyimage.com/505x308.jpg/5fa2dd/ffffff","lg_thumb":"http://dummyimage.com/505x308.jpg/ff4444/ffffff"},
+        {"title":"Human Resources Assistant II","sm_thumb":"http://dummyimage.com/505x308.jpg/5fa2dd/ffffff","lg_thumb":"http://dummyimage.com/505x308.jpg/ff4444/ffffff"},
+        {"title":"Sales Associate","sm_thumb":"http://dummyimage.com/505x308.jpg/cc0000/ffffff","lg_thumb":"http://dummyimage.com/505x308.jpg/cc0000/ffffff"},
+        {"title":"Graphic Designer","sm_thumb":"http://dummyimage.com/505x308.jpg/cc0000/ffffff","lg_thumb":"http://dummyimage.com/505x308.jpg/cc0000/ffffff"},
+        {"title":"Web Designer II","sm_thumb":"http://dummyimage.com/505x308.jpg/5fa2dd/ffffff","lg_thumb":"http://dummyimage.com/505x308.jpg/5fa2dd/ffffff"},
+        {"title":"Desktop Support Technician","sm_thumb":"http://dummyimage.com/505x308.jpg/ff4444/ffffff","lg_thumb":"http://dummyimage.com/505x308.jpg/ff4444/ffffff"}]
 Course.create(course_data)
 
 user_data =
@@ -52,13 +52,13 @@ instructor_data =
     [{"first_name":"Chris","last_name":"Hadfield","course": Course.first},
     {"first_name":"Melina","last_name":"Odom","course": Course.second},
     {"first_name":"Dana","last_name":"Minmagh","course": Course.third},
-    {"first_name":"Gaston","last_name":"Heavens"},
-    {"first_name":"Braden","last_name":"Bagnall"},
-    {"first_name":"Vivie","last_name":"Sinkins"},
-    {"first_name":"Bren","last_name":"Bennedick"},
-    {"first_name":"Taddeusz","last_name":"MacKnockiter"},
-    {"first_name":"Tamiko","last_name":"Schneidau"},
-    {"first_name":"Merilyn","last_name":"Eydel"}]
+    {"first_name":"Gaston","last_name":"Heavens","course": Course.find(4)},
+    {"first_name":"Braden","last_name":"Bagnall","course": Course.find(5)},
+    {"first_name":"Vivie","last_name":"Sinkins","course": Course.find(6)},
+    {"first_name":"Bren","last_name":"Bennedick","course": Course.find(7)},
+    {"first_name":"Taddeusz","last_name":"MacKnockiter","course": Course.find(8)},
+    {"first_name":"Tamiko","last_name":"Schneidau","course": Course.find(9)},
+    {"first_name":"Merilyn","last_name":"Eydel","course": Course.find(10)}]
 Instructor.create(instructor_data)
 
 chapter_data =
@@ -73,3 +73,17 @@ chapter_data =
     {"number":9,"title":"Sacred ibis","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 9,"course": Course.first},
     {"number":10,"title":"Helmeted guinea fowl","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 10,"course": Course.first}]
 Chapter.create(chapter_data)
+
+first = Course.first
+second = Course.second
+
+[first, second].each do |recommender|
+	Course.all.each do |recommendee|
+		unless recommendee == recommender
+			Recommendation.create ({
+					recommender_id: recommender.id,
+					recommendee_id: recommendee.id
+				})
+		end
+	end
+end
