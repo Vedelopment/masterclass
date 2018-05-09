@@ -46,6 +46,7 @@ a:link, a:visited, a:hover, a:active {
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 1200px;
     background-color: black;
     font-size: 12px;
     padding: 11px 0;
@@ -69,6 +70,10 @@ a:link, a:visited, a:hover, a:active {
 .mc-header__login-link {
     float: right;
     margin-right: 10px;
+}
+.mc-header__login-link {
+    position: absolute;
+    right: 18px;
 }
 /* course hero area */
 .vignette {
@@ -130,13 +135,16 @@ a:link, a:visited, a:hover, a:active {
 }
 .dev-col-three {
     display: inline-block;
-    width: 29%;
+    width: 28%;
     padding: 20px;
     text-align: center;
 }
 .dev-col-three:nth-child(2) {
     border-right: 1px solid rgba(255,255,255,0.2);
     border-left: 1px solid rgba(255,255,255,0.2);
+    width: 33%;
+    padding: 20px;
+    text-align: center;
 }
 .cm-intro-title {
     font-size: 20px;
@@ -213,6 +221,9 @@ a:link, a:visited, a:hover, a:active {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid rgba(77,87,104,0.2);
+}
+.indv-less:last-of-type {
+    border-bottom: none;
 }
 .cm-chapt-number {
     font-size: 3em;
