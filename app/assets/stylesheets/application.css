@@ -19,7 +19,8 @@ body {
     font: normal 400 16px/1 "Lato", "Helvetica", "Arial", sans-serif;
     font-weight: lighter;
     color: white;
-    font-sm
+    max-width: 1200px;
+    margin: 0 auto;
 }
 /* nav */
 .mc-header__inner {
@@ -144,7 +145,33 @@ a:link, a:visited, a:hover, a:active {
     line-height: 1.375;
     color: rgba(255,255,255,0.5);
 }
-
+/* cm lesson description */
+.wrap-cm-less {
+    display: inline-block;
+    width: calc(100% - 575px);
+    height: calc(430px - 6em);
+    margin: 0 auto;
+    padding: 3em 4em;
+    background: #fff;
+    margin: 0 0 4em;
+    color: #4D5768;
+}
+.cm-less-title {
+    font-size: 3em;
+    font-weight: 300;
+    margin-bottom: 0.3em;
+    text-transform: none;
+}
+.cm-less-desc {
+    font-size: 1em;
+    line-height: 1.7;
+    color: rgba(77,87,104,0.6);
+}
+.cm-less-img {
+    position: absolute;
+    margin-right: -100px; /* takes into account clip value */
+    clip: rect(0px,460px,526px,0px);
+}
 
 /* get started */
 /* imported from chrome inspector */
