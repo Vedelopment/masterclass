@@ -249,6 +249,16 @@ a:link, a:visited, a:hover, a:active {
     margin: 0;
 }
 
+/* recommended videos */
+.rec-header {
+    font-size: 1.4em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin: 1.5em 0;
+    text-align: center;
+}
+
 /* get started */
 /* imported from chrome inspector */
 .cm-ctas-block {

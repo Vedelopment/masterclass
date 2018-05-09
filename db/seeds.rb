@@ -34,19 +34,6 @@ course_data =
     {"title":"Elymus interruptus Buckley","sm_thumb":"","lg_thumb":""},
     {"title":"Baileya pleniradiata Harv. & A. Gray ex A. Gray","sm_thumb":"","lg_thumb":""}]
 Course.create(course_data)
-first = Course.first
-second = Course.second
-
-[first, second].each do |recommender|
-	Course.all.each do |recommendee|
-		unless recommendee == recommender
-			Recommendation.create ({
-					recommender_id: recommender.id,
-					recommendee_id: recommendee.id
-				})
-		end
-	end
-end
 
 user_data =
     [{"first_name":"Cassie","last_name":"Stranger","email":"cstranger0@msn.com","phone":"911-380-6986","all_access":false},
@@ -65,13 +52,13 @@ instructor_data =
     [{"first_name":"Chris","last_name":"Hadfield","course": Course.first},
     {"first_name":"Melina","last_name":"Odom","course": Course.second},
     {"first_name":"Dana","last_name":"Minmagh","course": Course.third},
-    {"first_name":"Gaston","last_name":"Heavens"},
-    {"first_name":"Braden","last_name":"Bagnall"},
-    {"first_name":"Vivie","last_name":"Sinkins"},
-    {"first_name":"Bren","last_name":"Bennedick"},
-    {"first_name":"Taddeusz","last_name":"MacKnockiter"},
-    {"first_name":"Tamiko","last_name":"Schneidau"},
-    {"first_name":"Merilyn","last_name":"Eydel"}]
+    {"first_name":"Gaston","last_name":"Heavens","course": Course.find(4)},
+    {"first_name":"Braden","last_name":"Bagnall","course": Course.find(5)},
+    {"first_name":"Vivie","last_name":"Sinkins","course": Course.find(6)},
+    {"first_name":"Bren","last_name":"Bennedick","course": Course.find(7)},
+    {"first_name":"Taddeusz","last_name":"MacKnockiter","course": Course.find(8)},
+    {"first_name":"Tamiko","last_name":"Schneidau","course": Course.find(9)},
+    {"first_name":"Merilyn","last_name":"Eydel","course": Course.find(10)}]
 Instructor.create(instructor_data)
 
 chapter_data =
@@ -86,3 +73,17 @@ chapter_data =
     {"number":9,"title":"Sacred ibis","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 9,"course": Course.first},
     {"number":10,"title":"Helmeted guinea fowl","desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam","number": 10,"course": Course.first}]
 Chapter.create(chapter_data)
+
+first = Course.first
+second = Course.second
+
+[first, second].each do |recommender|
+	Course.all.each do |recommendee|
+		unless recommendee == recommender
+			Recommendation.create ({
+					recommender_id: recommender.id,
+					recommendee_id: recommendee.id
+				})
+		end
+	end
+end

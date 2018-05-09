@@ -94,5 +94,18 @@
                 </div>
             <% end %>
         </section>
+
+        <!-- other recommended courses -->
+        <h1 class="rec-header">Recommended for you</h1>
+        <section class="wrap-cm-less-list">
+            <% @course.recommendees.each do |c| %>
+                <div class="indv-less">
+                    <div class="wrap-cm-chapt-info">
+                        <p class="cm-chapt-desc"><%= "#{c.instructor.first_name} #{c.instructor.last_name}" %></p>
+                        <p class="cm-chapt-title">teaches <%= c.title %></p>
+                    </div>
+                </div>
+            <% end %>
+        </section>
     </div>
 </div>
